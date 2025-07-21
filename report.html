@@ -5,13 +5,66 @@
   <title>Bug Report</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="report.js" defer></script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .report-container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .report-container h2 {
+      margin-bottom: 1rem;
+    }
+
+    .report-container input[type="text"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .report-container button[type="submit"] {
+      background-color: #dc3545;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .report-container button[type="submit"]:hover {
+      transform: scale(1.05);
+      background-color: #c82333;
+    }
+  </style>
 </head>
 <body>
-  <h2>Bug Report Form 🐞</h2>
-  <form action="/submit-report" method="POST">
-    <input type="text" name="bug" placeholder="Describe the bug..." required />
-    <input type="hidden" name="csrf_token" id="csrf_token" />
-    <button type="submit">Submit Report</button>
-  </form>
+  <div class="report-container">
+    <h2>Bug Report Form 🐞</h2>
+    <form action="/submit-report" method="POST">
+      <input type="text" name="bug" placeholder="Describe the bug..." required />
+      <input type="hidden" name="csrf_token" id="csrf_token" />
+      <button type="submit">Submit Report</button>
+    </form>
+  </div>
 </body>
 </html>
