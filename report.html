@@ -60,12 +60,11 @@
 </head>
 <body>
   <div class="report-container">
-    <h2>Bug Report Form 🐞</h2>
-    <form action="/submit-report" method="POST">
-      <input type="text" name="bug" placeholder="Describe the bug..." required />
-      <input type="hidden" name="csrf_token" id="csrf_token" />
-      <button type="submit">Submit Report</button>
-    </form>
+  <h2>Bug Report Form 🐞</h2>
+  <form id="bugForm">
+    <input type="text" name="bug" placeholder="Describe the bug..." required />
+    <button type="submit">Submit Report</button>
+  </form>
   </div>
 </body>
 </html>
