@@ -16,7 +16,8 @@ window.onload = () => {
 
     // Generate token (optional: can be used for verification)
     const token = getExpectedToken();
-    console.log("report.js loaded!");
+    console.log("✅ report.js successfully loaded");
+    alert("JS file is working!");
 
     // Show the flag in an alert box
     alert("🎉 Flag: flag{hackera_goodjob}");
