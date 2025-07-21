@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bug Report</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="report.js" defer></script>
+</head>
+<body>
+  <h2>Bug Report Form 🐞</h2>
+  <form action="/submit-report" method="POST">
+    <input type="text" name="bug" placeholder="Describe the bug..." required />
+    <input type="hidden" name="csrf_token" id="csrf_token" />
+    <button type="submit">Submit Report</button>
+  </form>
+</body>
+</html>
